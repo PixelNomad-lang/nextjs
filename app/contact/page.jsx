@@ -44,23 +44,20 @@ const Contact = () => {
               <p className="text-white/70 mb-6">Feel free to reach out to collaborate or inquire about projects. We are excited to work with you!</p>
 
               <motion.div whileHover={{ scale: 1.05 }} className="transition-transform">
-                <Input type="text" placeholder="First Name" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400" />
+                <Input type="text" placeholder="First Name" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400 transition-colors duration-300" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="transition-transform">
-                <Input type="text" placeholder="Last Name" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400" />
+                <Input type="text" placeholder="Last Name" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400 transition-colors duration-300" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="transition-transform">
-                <Input type="email" placeholder="Email" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400" />
+                <Input type="email" placeholder="Email" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400 transition-colors duration-300" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="transition-transform">
-                <Textarea placeholder="Your message" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400" />
+                <Textarea placeholder="Your message" className="w-full p-3 rounded-lg bg-gray-700 focus:ring-2 focus:ring-green-400 transition-colors duration-300" />
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="self-start transition-transform"
-              >
-                <Button className="bg-gradient-to-r from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg">
+              <motion.div whileHover={{ scale: 1.1 }} className="self-start transition-transform">
+                <Button className="bg-gradient-to-r from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
                   Submit
                 </Button>
               </motion.div>
@@ -74,7 +71,7 @@ const Contact = () => {
                 key={index}
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1, transition: { delay: index * 0.2, duration: 0.6, ease: "easeOut" } }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
                 className={`${item.bgColor} flex items-center gap-4 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all`}
               >
                 <div className="text-white text-3xl">{item.icon}</div>
