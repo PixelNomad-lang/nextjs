@@ -40,7 +40,7 @@ const Contact = () => {
           {/* Contact form */}
           <div className="xl:w-1/2 order-2 xl:order-none bg-[#1c1c22] p-8 rounded-xl shadow-lg">
             <form className="flex flex-col gap-6">
-              <h3 className="text-4xl text-green-400 font-bold mb-4">Let's Work Together</h3>
+              <h3 className="text-4xl text-green-400 font-bold mb-4">Let&apos;s Work Together</h3>
               <p className="text-white/70 mb-6">Feel free to reach out to collaborate or inquire about projects. We are excited to work with you!</p>
 
               <motion.div whileHover={{ scale: 1.05 }} className="transition-transform">
